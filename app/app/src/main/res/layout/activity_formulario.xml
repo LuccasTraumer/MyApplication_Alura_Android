@@ -15,21 +15,25 @@
             android:hint="Nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etNome"
         />
         <EditText
             android:hint="Endereço"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etEndereco"
         />
         <EditText
             android:hint="Telefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etTelefone"
         />
         <EditText
             android:hint="Site"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etSite"
         />
         <RatingBar
             android:layout_width="wrap_content"
@@ -37,11 +41,13 @@
             android:numStars="5"
             android:max="10"
             android:layout_gravity="center"
+            android:id="@+id/rbNota"
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btnSalvar"
+            android:id="@+id/btnSalvar"
             />
     </LinearLayout>
 </ScrollView>
