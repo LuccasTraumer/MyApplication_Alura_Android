@@ -20,6 +20,7 @@ public class FormularioActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(FormularioActivity.this,"Botão Clicado",Toast.LENGTH_LONG).show();
+                finish();
             }
         });
     }

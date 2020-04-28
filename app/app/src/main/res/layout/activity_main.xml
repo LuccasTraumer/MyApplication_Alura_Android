@@ -26,6 +26,7 @@
         android:textColor="#ffff"
         android:textSize="30sp"
         android:stateListAnimator="@null"
+        android:id="@+id/btnAddAlunos"
     />
 
 </RelativeLayout>
