@@ -9,17 +9,21 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.myapplication.modelo.Aluno;
 
 import java.util.zip.Inflater;
 
 public class FormularioActivity extends AppCompatActivity {
+    private FormularioHelper helper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
-
+        helper = new FormularioHelper(this);
     }
 
     @Override
@@ -35,6 +39,8 @@ public class FormularioActivity extends AppCompatActivity {
             case R.id.menu_formulario_ok:
                 Toast.makeText(FormularioActivity.this,"Botão Clicado",Toast.LENGTH_LONG).show();
                 finish();
+                Aluno aluno = helper.pegaAluno();
+
                 break;
         }
         return super.onOptionsItemSelected(item);
